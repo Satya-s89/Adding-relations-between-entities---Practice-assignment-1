@@ -1,0 +1,27 @@
+.destination-container {
+  padding: 2rem 0;
+}
+
+.destination-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .destination-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .destination-container h1 {
+    font-size: 2rem;
+  }
+}
